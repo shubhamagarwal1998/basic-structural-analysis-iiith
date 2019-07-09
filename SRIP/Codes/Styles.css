@@ -1,0 +1,36 @@
+table
+{
+	border-collapse: collapse;
+	border: 5px solid #4169e1;
+	height: 100%;
+}
+td
+{
+	border-collapse: collapse;
+	border: 2px solid #4169e1;
+	padding: 10px;
+	color: #4169e1;
+}
+.list
+{
+	cursor :pointer;
+}
+#b1
+{
+	background-color: black;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#button1
+{
+	float: right;
+	padding:-100px;
+}
+#Clicked
+{
+	font-size: 25px;
+	 text-shadow: 1px 1px 3px #000000;
+}
