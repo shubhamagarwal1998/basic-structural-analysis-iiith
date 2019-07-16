@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="Styles.css">
 <title>Basic Structural Analysis:Plates
 </title>
 </head>
 <body id="bd1">
-<script src="Cuboid.js" language="javascript" type="text/javascript">
-</script>
+	
 <table id="table1" align="center">
 	<tr>
 		<td>
@@ -32,22 +32,43 @@
 	<li id="item4" value="1 Side Fixed" onclick="textDisplay4()">1 Side Fixed</li>
 </ul>
 </td>
-<script src="Cuboid.js" language="javascript" type="text/javascript">
-</script>
 	<td>
+		<div id="ball">
+		<canvas id="canvasforball"></canvas>
+			<script>
+		   var canvas = document.getElementById("canvasforball");
+        ctx = canvas.getContext("2d");
+       canvas.height=400;
+        var x = 180;
+        var y = 35;
+
+
+  
+        ctx.beginPath();
+        ctx.arc(x, y, 30, 0, Math.PI*2);
+        ctx.fillStyle = "#000000";
+        ctx.fill();
+        ctx.closePath();
+			</script>
+		
+		</div>
 <div id="button1">
 <button value="Start" id="b1">Start</button>
 </div>
 <br>
 <br>
+<br>
 <div id="Clicked" >
 </div>
 <div class="cuboid" id="division">
+	<canvas id="Cuboidcanvas" ></canvas>
+	<script src="Function.js"></script>
 	</div>
-<script src="Cuboid.js" language="javascript" type="text/javascript">
-</script>
+
 	</td>
 </tr>
 </table>
+<script src="Cuboid.js" language="javascript" type="text/javascript">
+</script>
 </body>
 </html>
