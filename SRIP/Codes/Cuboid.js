@@ -18,5 +18,4 @@ function textDisplay4() {
 	var string="<b>1 Side Fixed</b>";
 	document.getElementById("Clicked").innerHTML=string;
 }
-
 textDisplay1();
