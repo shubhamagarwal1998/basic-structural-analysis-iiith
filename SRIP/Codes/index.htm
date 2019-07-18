@@ -4,11 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="Function.js"></script> -->
 <link rel="stylesheet" type="text/css" href="Styles.css">
 <title>Basic Structural Analysis:Plates
 </title>
 </head>
-<body id="bd1">
+<body id="bd1" onload="drawCuboid()">
 	
 <table id="table1" align="center">
 	<tr>
@@ -18,7 +19,7 @@
 	<b><u>Plates</b></u>
 </center>
 <ul class="list" id="list1">
-	<li id="item1" value="All Sides Fixed" onclick="textDisplay1()">All Sides Fixed</li><br>
+	<li id="item1" value="All Sides Fixed" onclick="textDisplay1A()">All Sides Fixed</li><br>
 	<br>
 	<li id="item2" value="3 Sides Fixed" onclick="textDisplay2()">3 Sides Fixed</li><br>
 	<br>
@@ -41,9 +42,6 @@
        canvas.height=400;
         var x = 180;
         var y = 35;
-
-
-  
         ctx.beginPath();
         ctx.arc(x, y, 30, 0, Math.PI*2);
         ctx.fillStyle = "#000000";
