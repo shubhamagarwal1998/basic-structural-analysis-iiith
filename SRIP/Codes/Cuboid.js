@@ -15,13 +15,16 @@ function textDisplay2() {
 function textDisplay3A() {
 	var string="<b>2 Sides Fixed</b><br>Side By Side";
 	document.getElementById("Clicked").innerHTML=string;
+	load3A();
 }
 function textDisplay3B() {
 	var string="<b>2 Sides Fixed</b><br>Opposite Sides";
 	document.getElementById("Clicked").innerHTML=string;
+	load3B();
 }
 function textDisplay4() {
 	var string="<b>1 Side Fixed</b>";
 	document.getElementById("Clicked").innerHTML=string;
+	load4();
 }
 textDisplay1();
